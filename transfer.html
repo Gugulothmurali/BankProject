@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+           justify-content: center;
+           text-align: center;
+}
+.input{
+margin:1px;
+padding:5px;
+}
+.send{
+font-size:16px;
+margin-bottom:5px;
+}
+.receivee{
+font-size:16px;
+margin-bottom:5px;
+}
+.amount{
+font-size:16px;
+margin-bottom:5px;
+}
+.submit{
+font-size:12px;
+margin-bottom:5px;
+color:blue;
+background-color:white;
+font-weight:bold; 
+}
+.div-1{
+   width:300px;
+   height:200px;
+   border:solid 1px red;
+   padding:25px 50px;
+   justify-content: center;
+  align-items: center;
+   
+   
+}
+input[type=number]{
+    width:100%;
+    height:30px;
+    border-radius: 5px;
+    font-weight:bold;
+    
+    
+}
+
+input[type=submit]{
+    width:50%;
+    height:30px;
+    border-radius: 2px;
+    font-weight:bold;
+    font-size: 20px;
+    background-color: pink;
+    font-family:sans-serif;
+}
+
+</style>
+</head>
+<body>
+<h2>Transfer Amount</h2>
+    <form action="transfer" method="post">
+    <div class="div-1">
+        Sender Account ID: <input class="send" type="number" name="sender_id" required><br>
+        Receiver Account ID: <input class="receivee" type="number" name="receiver_id" required><br>
+        Amount: <input class="amount" type="number" step="0.01" name="amount" required><br>
+        <input class="submit" type="submit" value="Transfer">
+        </div>
+    </form>
+</body>
+</html>

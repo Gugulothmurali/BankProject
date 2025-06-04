@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function display() {
+		var nm = document.myform.nm.value;
+		if (nm == "") {
+			window.alert("murali : ");
+			return false;
+		}
+		return true;
+
+	}
+</script>
+</head>
+<body>
+	<form name="myform" action="" onsubmit="return display()">
+		<label>Enter Name:</label> <input type="name" id="name" name="nm">
+		<br> <input type="Submit" value="submit">
+	</form>
+</body>
+</html>
